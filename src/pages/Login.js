@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 
 class Login extends Component {
-    componentWillMount() {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
     render() {
         return (
-            <div>Login </div>
+            <div className='LoginWrapper'>
+                login
+            </div>
         )
     }
 }

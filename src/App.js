@@ -1,19 +1,18 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import { Home, Profile, Shop, Login } from './pages';
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
+class App extends Component {
+  render() {
+    return (
+      <div>
         <Route exact path="/" component={Home} />
         <Route path="/profile" component={Profile} />
         <Route path="/shop" component={Shop} />
         <Route path="/login" component={Login} />
-      </BrowserRouter>
-    </div>
-  );
+      </div >
+    );
+  }
 }
 
 export default App;
